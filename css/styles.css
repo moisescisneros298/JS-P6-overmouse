@@ -1,1 +1,52 @@
-/*# sourceMappingURL=styles.css.map */
+@import "https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: url(../img/bg.jpg);
+  background-size: cover;
+}
+
+.container {
+  position: relative;
+  width: 400px;
+  height: 400px;
+}
+.container .thum {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1;
+}
+.container .thum li {
+  list-style: none;
+  width: 100px;
+  height: 100px;
+  margin: 10px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.05);
+  border-radius: 20px;
+  -webkit-backdrop-filter: blur(4px);
+          backdrop-filter: blur(4px);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
+  border-left: 1px solid rgba(255, 255, 255, 0.5);
+}
+.container .thum li img {
+  width: 80%;
+  transition: 0.5s;
+}
+.container .thum li img:hover {
+  transform: rotate(-35deg);
+}/*# sourceMappingURL=styles.css.map */
