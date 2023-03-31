@@ -48,5 +48,25 @@ body {
             }
             
         }
-    } 
+    }
+    .imgBx {
+        position: absolute;
+        top: 0;
+        right: 0;
+        padding: 60px 20px;
+        width: 350px;
+        height: 100%;
+        padding-left: 50px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column;
+        background: rgba(255,255,255,0.2);
+        box-shadow: 0 15px 25px rgba(0,0,0,0.05);
+        border-radius: 20px;
+        backdrop-filter: blur(4px);
+        border: 1px solid rgba(255,255,255,0.25);
+        border-top: 1px solid rgba(255,255,255,0.5);
+        border-left: 1px solid rgba(255,255,255,0.5);
+    }
 }
